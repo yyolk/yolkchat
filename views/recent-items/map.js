@@ -5,7 +5,8 @@ function(doc) {
           message:doc.message,
           gravatar_url : p.gravatar_url,
           nickname : p.nickname,
-          name : doc.name
+          name : doc.name,
+          timestamp : doc.created_at
       });
   }
 };
