@@ -1,0 +1,28 @@
+[{
+    "from": "",
+    "to": "index.html"
+},
+{
+    "from": "style/*",
+    "to": "style/*"
+},
+{
+    "from": "script/*",
+    "to": "script/*"
+},
+{
+    "from": "vendor/*",
+    "to": "vendor/*"
+},
+{
+    "from": "app/*",
+    "to": "app/*"
+},
+{
+    "from": "config/*",
+    "to": "config/*"
+},
+{
+    "from": "view/*",
+    "to": "views/*"
+}]
