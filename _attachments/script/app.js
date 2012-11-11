@@ -61,6 +61,15 @@ $(function() {
         },
         loggedOut : function() {
             $("#profile").html('<p>Please log in to see your profile.</p>');
+            $("#create-message").submit(function(e){
+                e.preventDefault();
+                var form = this, doc = $(form).serializeObject();
+                doc.created_at = new Date();
+                doc.profile = "Anonymous";
+                db.saveDoc(doc, {success: function() {form.reset();}});
+                return false;
+            }).find("input").focus();
+                    
         }
     });
  });
